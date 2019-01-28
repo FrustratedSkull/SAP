@@ -1,19 +1,4 @@
 <!DOCTYPE html>
-<html lang="en" >
-
-<head>
-  <meta charset="UTF-8">
-  <title>index.html</title>
-  
-  
-  
-  
-  
-</head>
-
-<body>
-
-  <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -47,63 +32,111 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
         </button>
-        <a class="navbar-brand" href="#">WebSiteName</a>
+        <a class="navbar-brand" href="#"></a> <!---Enter the website name--->
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">ABAP</a></li>
-          <li><a href="#">DDIC</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="abap.html">ABAP</a></li>
+          <li><a href="ddic.html">DDIC</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#myModal">Contact</a></li>
+				<!-- Modal -->
+				<div id="myModal" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Contact Us</h4>
+							</div>
+							<div class="modal-body">
+								  <form action="/action_page.php">
+									<div class="form-group">
+										<label for="email">Email:</label>
+										<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+									</div>
+									<div class="form-group">
+										<label for="comment">Message</label>
+										<textarea class="form-control" rows="5" id="comment" placeholder="Enter your message" name="msg"></textarea>
+									</div> 
+									<button type="submit" class="btn btn-default">Submit</button>
+									</form>
+							</div>
+							<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
           <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
         </ul>
-        <form class="navbar-form navbar-left" action="/action_page.php">
+ <!---       <form class="navbar-form navbar-left" action="/action_page.php">
           <div class="form-group">
           <input type="text" class="form-control" placeholder="Search" name="search">
           </div>
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
-      </div>
+--->  
+</div>
   </div>
   
 </nav>
 
-<hr>
+<!-----End of Header--->
 
+<hr>
+<!--------Main Section----------->
+  
   <div class="container-fluid ">
+    <div class="row">
+      <div class="col-sm-8">
+        <strong style="margin-left:30px; font-size:40px;">Recent Posts</strong> 
+      </div>
+    </div> 
     <div class="row">
       <div class="col-sm-8 list">
         <ul>
           <li><span>Report (</span><a href="#">More Details</a><span>)</span></li>
           <li><span>ALV Report (</span><a href="#">More Details</a><span>)</span></li>
-          <li><span> (</span><a href="#">More Details</a><span>)</span></li>
           <li><span>ALV List Display (</span><a href="#">More Details</a><span>)</span></li>
           <li><span>ALV Grid Display (</span><a href="#">More Details</a><span>)</span></li>
           <li><span>Table Maintainance Generator (</span><a href="#">More Details</a><span>)</span></li>
           <li><span>Foriegn Key in DDIC Table (</span><a href="#">More Details</a><span>)</span></li>
-          <li><span>ALV Grid Display (</span><a href="#">More Details</a><span>)</span></li>
+          <li><span>LSMW (</span><a href="#">More Details</a><span>)</span></li>
+		  <li><span>Interview Question Answers (</span><a href="#">More Details</a><span>)</span></li>
+		  <li><span>ABAP Keywords with Explanation (</span><a href="#">More Details</a><span>)</span></li>
+		  <li><span>Tips and Tricks (</span><a href="#">More Details</a><span>)</span></li>
         </ul>
       </div>
       <div class="col-sm-4">
-        <p></p>
+<!-----------------------------Search Bar-------------------------------------->
+        <script>
+          (function() {
+              var cx = '016068532794081797455:qxzr7_a0qrc';
+              var gcse = document.createElement('script');
+              gcse.type = 'text/javascript';
+              gcse.async = true;
+              gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(gcse, s);
+          })();
+        </script>
+        <gcse:search></gcse:search>
+<!-----------------------------Search Bar-------------------------------------->
       </div>
     </div>
+		
 <hr>
-    <div class="row footer">
+    <div class="row footer" style="margin-top:3%;">
       <div class="col-sm-12" >
           <p>© Copyright - FunPlay 2019</p>
       </div>
     </div>
-  <div> 
-</body>
-
-</html>
-  
-  
-
+  </div> 
 </body>
 
 </html>
