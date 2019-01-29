@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  <style>
+	.code{
+			background-color: #eee;
+			padding: 3%;
+	}
+    .footer{
+			background-color: #262626;
+			color           : white;
+			padding         : 3%;
+    }
+    .list{
+			padding         : 2%; 
+    }
+  </style>
+    
+<title>SAP Solutions</title>
+</head>
+
+<body  style="font-family: 'Open Sans', sans-serif; font-size: 18px;">
+  
+  <!------------------------------Start of Header--------------------------------------------------->
+  
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#"></a> <!---Enter the website name--->
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="../index.html">Home</a></li>
+          <li class="active"><a href="#">ABAP</a></li>
+          <li><a href="../ddic.html">DDIC</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#myModal">Contact</a></li>
+				<!-- Modal -->
+				<div id="myModal" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Contact Us</h4>
+							</div>
+							<div class="modal-body">
+								  <form action="/action_page.php">
+									<div class="form-group">
+										<label for="email">Email:</label>
+										<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+									</div>
+									<div class="form-group">
+										<label for="comment">Message</label>
+										<textarea class="form-control" rows="5" id="comment" placeholder="Enter your message" name="msg"></textarea>
+									</div> 
+									<button type="submit" class="btn btn-default">Submit</button>
+									</form>
+							</div>
+							<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+ <!---       <form class="navbar-form navbar-left" action="/action_page.php">
+          <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+--->  
+</div>
+  </div>
+  
+</nav>
+
+<!----------------------------------End of Header------------------------------------------>
+
+<hr>
+
+<!----------------------------------Breadcrumb---------------------------------->
+
+<ul class="breadcrumb">
+  <li><a href="../index.html">Home</a></li>
+  <li><a href="../abap.html">ABAP</a></li>
+  <li class="active">ALV List Display</li> 
+</ul>
+
+<!----------------------------------Breadcrumb End---------------------------------->
+
+<!-----------------------------------Start of Section--------------------------------------->
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-8">
+			<h2><strong>For All Entries</strong></h2>
+			<div class="code">
+				<p>
+<br>					DATA IT_TAB TYPE TABLE OF EKKO.
+<br>
+<br>					SELECT * FROM EKKO INTO TABLE IT_TAB UP TO 100 ROWS.
+<br>  
+<br>					CALL FUNCTION 'REUSE_ALV_LIST_DISPLAY'
+<br>					EXPORTING
+<br>					
+<br>						I_STRUCTURE_NAME               = 'EKKO'
+<br>					
+<br>						TABLES
+<br>						T_OUTTAB                       = IT_TAB
+<br>					
+<br>            .   
+			
+				</p>
+			</div>
+			
+			<h2><strong>Output</strong></h2>
+			<img width="100%" src="../images/alv_list.png"></img>
+		</div>
+		<div class="col-sm-4">
+<!-----------------------------Search Bar-------------------------------------->
+        <script>
+          (function() {
+              var cx = '016068532794081797455:qxzr7_a0qrc';
+              var gcse = document.createElement('script');
+              gcse.type = 'text/javascript';
+              gcse.async = true;
+              gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(gcse, s);
+          })();
+        </script>
+        <gcse:search></gcse:search>
+<!-----------------------------Search Bar-------------------------------------->
+<!-----------------------------Quick Links--------------------------------------->
+
+<strong style="font-size:24px;">Quick Links</strong>
+<hr>
+
+ <ul class="list-group ">
+	<li class="list-group-item"><a href="#">Link1</a>	<span class="badge">0</span></li>
+	<li class="list-group-item"><a href="#">Link2</a>	<span class="badge">0</span></li>
+	<li class="list-group-item"><a href="#">Link3</a>	<span class="badge">0</span></li>
+</ul> 
+
+<!-----------------------------End of Quick Links--------------------------------------->
+			</div>
+	</div>
+</div>
+
+<!-----------------------------------End of Section--------------------------------------->
+
+<hr>
+    <div class="row footer" style="margin-top:3%;">
+      <div class="col-sm-12" >
+          <p>© Copyright - FunPlay 2019</p>
+      </div>
+    </div>
+  </div> 
+</body>
+
+</html>
