@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Module Pool</title>
+    <style>
+        body{
+            background-color: #faf9f9;
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 2px;
+        }
+        h1{
+             
+            font-size: 44px;
+        }
+        p{
+            font-size: 18px;
+            
+        }
+        #level{
+            background-color: black;
+            color: #DCDCDC;
+            padding: 1%;
+        }
+        /* 
+        HTML5 defines eight new semantic elements. 
+        All these are block-level elements.
+
+        To secure correct behavior in older browsers, 
+        you can set the CSS display property for these HTML elements to block:
+        */
+        header, section, footer, aside, nav, main, article, figure {
+            display: block;  
+            border: 1px solid black;
+            margin: 1%;
+        }
+        nav{
+            padding: 2%; 
+            
+        }
+        .nav{
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 22px;
+            padding-right: 4%;
+            color: rgba(35, 98, 134, 0.781);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="" class="nav">Home</a>
+        <a href="" class="nav">ABAP Programs</a>
+        <a href="" class="nav">Open Forum</a>
+    </nav>
+    <main>    
+        <article>
+            <header>    
+                <h1>Module Pool Programming</h1>
+                <h4>Level: <strong id='level'>Intermediate</strong></h4>
+                <h3>Steps to work with module pool program: -</h3>
+            </header>
+        <p>
+        <ol> 
+            <li>    Create a module pool program (in SE38) & implement the logic.
+            <li>    Design the required screens (in SE51) & attached to the program.
+            <li>    Design the required menus (in SE41) & attached to screen.
+            <li>    Design the database tables (in SE11) & as per client requirement.
+            <li>    Create the transaction code (in SE93) & run the module pool program.
+            
+        </ol>
+        <strong>   These 5 steps, we can work with single transaction. I.e. SE80 (Object Navigator  </strong>
+        </p>
+        <footer>
+            <input type="button" value="Previous">
+            <input type="button" value="Next">
+            <p>About Me</p>
+        </footer>
+        </article>
+    </main>
+
+</body>
+</html>
