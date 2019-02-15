@@ -8,9 +8,10 @@
     <title>Module Pool</title>
     <style>
         body{
-            background-color: #faf9f9;
+            background-color: #ffffff;
             font-family: 'Open Sans', sans-serif;
             letter-spacing: 2px;
+            color: rgb(0, 0, 0);
         }
         h1{
              
@@ -23,7 +24,7 @@
         #level{
             background-color: black;
             color: #DCDCDC;
-            padding: 1%;
+            padding: 0.5%;
         }
         /* 
         HTML5 defines eight new semantic elements. 
@@ -34,19 +35,38 @@
         */
         header, section, footer, aside, nav, main, article, figure {
             display: block;  
-            border: 1px solid black;
+            border: 0px solid rgb(0, 0, 0);
             margin: 1%;
+            padding: 1%;
         }
-        nav{
-            padding: 2%; 
+        main, aside, section{
+            background-color: rgba(27, 27, 27, 0.11);
             
         }
+        nav, footer{
+            padding: 2%; 
+            background-color: rgba(226, 42, 42, 0.123);
+        }
         .nav{
+            
             text-decoration: none;
             font-weight: bold;
             font-size: 22px;
             padding-right: 4%;
             color: rgba(35, 98, 134, 0.781);
+        }
+        a{
+            text-decoration: none;
+            color: rgba(40, 40, 214, 0.753);
+            font-weight: bold;
+        }
+        .search{
+            padding: 0.5%;
+            margin: 1%;
+        }
+        .footer{
+            background-color: rgba(46, 42, 42, 0.007);
+            border: 1px solid black;
         }
     </style>
 </head>
@@ -56,31 +76,70 @@
         <a href="" class="nav">ABAP Programs</a>
         <a href="" class="nav">Open Forum</a>
     </nav>
-    <main>    
+
+    <input type="text" name="" class="search" placeholder="Search">
+    <input type="button" class="search" value="Search"> <br>
+    
+    <section>    
+        <a href="">Home</a> /
+        <a href="">ABAP</a> /
+        <a href="">Module Pool</a>
+    </section>
+    <!--Main Section Starts here-->
+    <main class="main">    
         <article>
-            <header>    
+            
                 <h1>Module Pool Programming</h1>
-                <h4>Level: <strong id='level'>Intermediate</strong></h4>
-                <h3>Steps to work with module pool program: -</h3>
-            </header>
+                <sub>By <strong>Nikhil</strong>| Date: 15 feb, 2019 | 0 Comments</sub> <br>
+                <h4>Level: <strong id='level'>Intermediate</strong></h4> <br>
+                <h2>Steps to work with module pool program: -</h2>
+            
         <p>
-        <ol> 
             <li>    Create a module pool program (in SE38) & implement the logic.
             <li>    Design the required screens (in SE51) & attached to the program.
             <li>    Design the required menus (in SE41) & attached to screen.
             <li>    Design the database tables (in SE11) & as per client requirement.
             <li>    Create the transaction code (in SE93) & run the module pool program.
             
-        </ol>
-        <strong>   These 5 steps, we can work with single transaction. I.e. SE80 (Object Navigator  </strong>
+        <br><br>
+        <strong>   These 5 steps, we can work with single transaction. I.e. SE80 (Object Navigator)  </strong>
         </p>
-        <footer>
+        
             <input type="button" value="Previous">
             <input type="button" value="Next">
-            <p>About Me</p>
-        </footer>
-        </article>
+      
     </main>
 
+    <section>
+            <h3 style="font-size:28px;margin: 0.5%;">Comments</h3>
+            <section>
+                <header class="header">
+                    <p>By <strong>User</strong> </p>
+                </header>
+                <footer class="footer">
+                    <p> No comments yet</p>
+                </footer>
+            </section>
+            <form action="" method="get">
+                <textarea name="" id="" cols="60" rows="5">
+                </textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+    </section>
+    <aside>
+        <header>
+            <h4>Related Posts</h4>
+            <ul>
+                <li><a href=""> For All Entries    </a> </li>
+                <li><a href=""> Classical Report   </a> </li>
+                <li><a href=""> Interactive Report </a> </li>
+            </ul> 
+        </header>
+    </aside>
+    <!--Footer-->
+    <footer style="background-color: rgba(226, 42, 42, 0.24);">
+        All Copyright Reserved - 2019
+
+    </footer>
 </body>
 </html>
